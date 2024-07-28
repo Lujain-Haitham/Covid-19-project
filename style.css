@@ -1,0 +1,356 @@
+*{
+    padding:0 ;
+    margin: 0;
+}
+/* font */
+@font-face {
+    font-family: RedHatDisplay-Regular ;
+    src: url(RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: RedHatDisplay-Medium ;
+    src: url(RedHatDisplay-Medium.ttf);
+}
+@font-face {
+    font-family: RedHatDisplay-SemiBold ;
+    src: url(RedHatDisplay-SemiBold.ttf);
+}
+@font-face {
+    font-family: RedHatDisplay-Bold ;
+    src: url(RedHatDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: Gelion-regular ;
+    src: url(Gelion\ Regular.ttf);
+}
+@font-face {
+    font-family: Gelion-medium ;
+    src: url(Gelion\ Medium.ttf);
+}
+@font-face {
+    font-family: Gelion-semibold ;
+    src: url(Gelion\ SemiBold.ttf);
+}
+@font-face {
+    font-family: Gelion-bold ;
+    src: url(Gelion\ Bold.ttf);
+}
+/* general */
+html{
+    font-family: RedHatDisplay-SemiBold ;
+    font-size: 16px ;
+}
+.container{
+    width: 80%;
+    margin-inline: auto;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* puplic */
+
+/*header*/
+header{
+    background-image: linear-gradient(#FFF8F8,#FFFFFF00);
+}
+/* nav-bar*/
+.navbar{
+    padding-block: 2rem;
+}
+.nav .nav-item .nav-link{
+    font-family: Gelion-regular;
+    font-size: 1.125rem;
+    color: #035755;
+    text-shadow: 0 4px 4px #00000040;
+}
+.nav .nav-item .active-link{
+    color: #FA5652;
+    position: relative;
+}
+.nav .active-link::after{
+    content: '';
+    border-radius: 100%;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #FA5652;
+    left: 50%;
+    transform: translateX(50%);
+    top: 100%;
+}
+.nav .nav-item .first-button{
+    border: 2px solid #FB4C47;
+    border-radius: 2.875rem;
+    background-color: transparent;
+    display: block;
+    cursor: pointer;
+    width: 9.625rem;
+    height: 3.4375rem;
+    font-family: Gelion-medium ;
+    color: #FF383D;
+    text-shadow: none;
+    padding-top: 15px;
+}
+.nav .nav-item .first-button:hover{
+    background-color: #FB4C47;
+    color: white;
+}
+/* header */
+.header .header-txt{
+    padding: 4rem;
+}
+.header .header-txt h1{
+    font-family: RedHatDisplay-Bold ;
+    font-size: 2rem;
+    color: #FA5652;
+}
+.header .header-txt h2{
+    font-family: RedHatDisplay-Bold ;
+    font-size: 3.25rem;
+    color: #035755; 
+}
+.header .header-txt p{
+    font-family: Gelion-regular ;
+    font-size: 1.5rem;
+    color: #4B4F51;
+    padding-block: 1rem;
+}
+.header .header-txt .primary-button{
+    border: 2px solid #FB4C47;
+    border-radius: 4.0625rem;
+    background-color: #FB4C47;
+    display: block;
+    cursor: pointer;
+    width: 15.625rem;
+    height: 5rem;
+    font-family: Gelion-bold ;
+    font-size: 1.5rem;
+    color: white;
+    padding-top: 1rem;
+}
+/* what is covid-19 */
+.corona{
+    padding-block: 4rem;
+}
+.corona .bg1{
+    position: absolute;
+    right: 0;
+    transform: translateY(-90%);
+}
+.corona .bg2{
+    position: absolute;
+    right: 6%;
+}
+.corona .corona-txt{
+    padding: 4rem;
+}
+.corona .corona-txt h3{
+    font-family: RedHatDisplay-Bold ;
+    font-size: 1.8125rem;
+    color: #FA5652;
+}
+.corona .corona-txt h2{
+    font-family: RedHatDisplay-Bold ;
+    font-size: 3.125rem;
+    color: #035755;
+}
+.corona .corona-txt p{
+    font-size: Gelion-regular;
+    padding-block: 1rem;
+    font-size: 1.5rem;
+    color: #4B4F51;
+}
+.corona .corona-txt .seconed-button{
+    border: 2px;
+    border-radius: 4.0625rem;
+    background-color: #FA565226;
+    display: block;
+    cursor: pointer;
+    width: 12.5rem;
+    height: 4.0625rem;
+    font-family: Gelion-semibold ;
+    font-size: 1.25rem;
+    color: #FA5652;
+}
+.corona .corona-txt .seconed-button:hover{
+    background-color: #FA5652;
+    border: #FA5652 solid 2px;
+    color: white;
+}
+/* contagion */
+.contagion{
+    padding-block: 4rem;
+}
+.contagion .bg3{
+    position: absolute;
+    z-index: -1;
+    transform: translate(60%, -100%);
+}
+.contagion h3{
+    font-family: RedHatDisplay-Bold ;
+    font-size: 1.8125rem;
+    color: #FA5652;
+}
+.contagion h2{
+    font-family: RedHatDisplay-Bold ;
+    font-size: 3.125rem;
+    color: #035755;
+}
+.contagion p{
+    font-family: Gelion-regular;
+    font-size: 1.125rem;
+    color: #4B4F51;
+}
+.contagion-body{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.contagion-body .card{
+    padding: 3rem 1.5rem;
+    margin: 1rem 2rem ;
+    width: calc((100%/3) - 2*1rem - 2*1.5rem);
+    background-color: white;
+    border: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 80px 0 #00000014 ;
+}
+.contagion-body .card:hover{
+    border-bottom: solid 6px #FA5652;
+}
+.contagion-body .card h3{
+    font-family: Gelion-medium;
+    font-size: 2.25rem;
+    color: #035755;
+}
+.contagion-body .card p{
+    font-family: Gelion-regular;
+    font-size: 1.125rem;
+    color: #4B4F51;
+}
+/* what should we do */
+.what{
+    padding-block: 4rem ;
+}
+.what .what-top{
+    padding-block: 3rem;
+}
+.what .what-top h3{
+    font-size: 1.8125rem;
+    font-family: RedHatDisplay-Bold ;
+    color: #FA5652;
+}
+.what .what-top h2{
+    font-size: 3.125rem;
+    font-family: RedHatDisplay-Bold ;
+    color: #035755;
+}
+.what .what-top p{
+    font-size: 1.125rem;
+    font-family: Gelion-regular;
+    color: #4B4F51;
+}
+.what .what-card .what-txt{
+    margin: 1rem;
+}
+.what .what-card .what-txt h3{
+    background-color: #FA565215;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    color: #FA5652;
+    font-size: 2.75rem;
+    font-family: RedHatDisplay-Bold ;
+    padding: 13px;
+}
+.what .what-card .what-txt h2{
+    font-family: Gelion-medium;
+    font-size: 2.9375rem;
+    color: #035755;
+}
+.what .what-card .what-txt p{
+    font-family: Gelion-regular;
+    font-size: 1.125rem;
+    color: #4B4F51;
+}
+.what .bg4{
+    position: absolute;
+    left: 0;
+    transform: translateY(128%);
+}
+.what .bg5{
+    position: absolute;
+    right: 0;
+    transform: translateY(70%);
+}
+.what .bg6{
+    position: absolute;
+    right: 5%;
+    transform: translateY(90%);
+}
+/* footer */
+.footer{
+    padding-block: 4rem;
+    background-image: linear-gradient(#FFFFFF00, #FFF8F8,#FFF8F8);
+}
+.footer .footer-top{
+    padding-bottom: 3rem;
+}
+.footer .footer-top h3{
+    font-family: Gelion-medium;
+    font-size: 4rem;
+    color: #0C6C44;
+}
+.footer .footer-top h2{
+    font-family: Gelion-semibold;
+    font-size: 4rem;
+    color: #0C6C44;  
+}
+.footer .footer-top .email{
+    width: 49.375rem;
+    height: 7.125rem;
+    border-radius: 57px;
+    border: solid white ;
+    background-color: white;
+    box-shadow: 0 8px 80px 0 #0000000F;
+    margin-block: 2rem;
+    font-size: 1.375rem;
+    font-family: Gelion-regular;
+    color: #758681;
+    padding-inline-start: 2rem;
+}
+.footer .footer-top .submit{
+    width: 13.0625rem;
+    height: 4.875rem;
+    border-radius: 157px;
+    background-color: #F44A45;
+    border: solid #F44A45;
+    color: white;
+    font-size: 1.375rem;
+    font-family: Gelion-medium;
+    transform: translate(-125%, 60%);
+}
+.footer .footer-bottom .footer-list .middle a{
+    font-family: Gelion-regular;
+    font-size: 1.4375rem;
+    color: #00402E;
+    text-shadow: none;
+}
+.footer .footer-bottom .copy-rights span{
+    font-family: Gelion-regular;
+    font-size: 1.4375rem;
+    color: #415E56;
+}
+.footer .bg7{
+    position: absolute;
+    right: 10%;
+}
+.footer .bg8{
+    position: absolute;
+    right: 0;
+    transform: translateY(25%);
+}
